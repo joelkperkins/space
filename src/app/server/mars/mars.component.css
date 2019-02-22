@@ -1,0 +1,38 @@
+.mars {
+    border-radius: 50%;
+    background: radial-gradient(circle at 46% 48.3%, red, white);
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    left: 45%;
+    top: 45%;
+    animation: mars 9s linear infinite;
+}
+
+@keyframes mars {
+    0% {
+        /* left */
+        box-shadow: inset 10px 0 10px rgba(0, 0, 0, 0.5);
+		transform: rotate(0deg) translateX(100px) translateY(80px) rotate(0deg) scale(1.5);
+    }
+    25% {
+        /* top */
+        box-shadow: inset 0 10px 5px rgba(0, 0, 0, 0.5);
+        transform: rotate(90deg) translateX(100px) translateY(80px) rotate(-90deg) scale(.75); 
+    }
+    50% {
+        /* right */
+        box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.5);
+        transform: rotate(180deg) translateX(100px) translateY(80px) rotate(-180deg) scale(.50);
+    }
+    75% {
+        /* bottom */
+        box-shadow: inset -10px 0px 5px rgba(0, 0, 0, 0.5);
+        transform: rotate(270deg) translateX(100px) translateY(80px) rotate(-270deg) scale(.75);
+    }
+	100% {
+        /* left */
+        box-shadow: inset 10px 0px 10px rgba(0, 0, 0, 0.5);
+        transform: rotate(360deg) translateX(100px) translateY(80px) rotate(-360deg) scale(1.5);
+	}
+}

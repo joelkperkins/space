@@ -1,0 +1,10 @@
+.asteroid {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1rem dotted brown;
+    height: 55rem;
+    width: 55rem;
+    position: absolute;
+    left: 36%;
+    top: 20%;
+}

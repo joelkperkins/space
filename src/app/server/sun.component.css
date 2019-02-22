@@ -1,0 +1,17 @@
+.sun {
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 60%, yellow, orange);
+    height: 8rem;
+    width: 8rem;
+    position: relative;
+    left: 50%;
+    top: 45%;
+    animation-name: sun;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    z-index: 2;
+}
+
+@keyframes sun {
+    0% { transform: rotate(360deg); }
+  }
